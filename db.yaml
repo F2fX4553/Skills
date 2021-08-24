@@ -1,0 +1,5 @@
+mysql_host: 'localhost'
+mysql_user: 'sibna'
+# Enter your password in field below
+mysql_password: '1234567'
+mysql_db: 'emails'
