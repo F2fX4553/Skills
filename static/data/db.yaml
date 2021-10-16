@@ -1,4 +1,4 @@
 mysql_host: 'localhost'
-mysql_user: 'usesibna'
-mysql_password: '******' #(enter your password)
-mysql_db: 'emaills'
+mysql_user: 'sibna'
+mysql_password: 'rochacab1994A!'
+mysql_db: 'emails'

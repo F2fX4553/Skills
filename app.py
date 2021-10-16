@@ -28,7 +28,6 @@ def index():
   if request.method == 'POST':
     userDetails = request.form
     email = userDetails['email']
-
     cursor = mysql.cursor()
     cursor.execute('INSERT INTO emails (email) VALUES("%s")' % (email))
     mysql.commit()
@@ -39,8 +38,13 @@ def index():
     # cursor.close()
     
     return redirect('portfol.html')
+    return redirect('email.html')
   return render_template('index.html')
 
+
+@app.route('/email.html')
+def email():
+  return render_template('email.html')
 @app.route('/portfol.html')
 def portfol():
   return render_template('portfol.html')
@@ -50,4 +54,4 @@ def porjikt_cv():
   return render_template('porjikt_cv.html')
 
 if __name__ == "__main__":
-  app.run(port = 8899, debug = True)
+  app.run(port = 9991, debug = True)
